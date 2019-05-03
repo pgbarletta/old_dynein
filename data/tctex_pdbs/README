@@ -1,0 +1,7 @@
+1XDX
+----
+    cp 1xdx.pdb orig_1xdx.pdb
+    splitted los 15 confórmeros en 15 pdbs
+    mv 1xdx_0001.pdb 1xdx_1.pdb // y así...
+
+----
