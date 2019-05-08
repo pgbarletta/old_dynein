@@ -1,7 +1,10 @@
+5JPW
+----
+    Usé normalize_pdbs.ipynb p/ determinar el frame más cercano al average.
+    cp orig_5jpw.pdb 5jpw.pdb // y conservo el MODEL 1
+
 1XDX
 ----
-    cp 1xdx.pdb orig_1xdx.pdb
-    splitted los 15 confórmeros en 15 pdbs
-    mv 1xdx_0001.pdb 1xdx_1.pdb // y así...
+    Usé normalize_pdbs.ipynb p/ determinar el frame más cercano al average.
+    cp orig_1xdx.pdb 1xdx.pdb // y conservo el MODEL 15
 
-----
