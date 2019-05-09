@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Thu  9 May 2019 15:52:57
+# Commandline: needle
+#    [-asequence] /home/pbarletta/labo/19/dynein/data/tctex_pdbs/model/5wi4/canonical
+#    [-bsequence] /home/pbarletta/labo/19/dynein/data/tctex_pdbs/model/5wi4/5wi4.pir
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    [-outfile] /home/pbarletta/labo/19/dynein/data/tctex_pdbs/model/5wi4/alignment_5wi4
+# Align_format: srspair
+# Report_file: /home/pbarletta/labo/19/dynein/data/tctex_pdbs/model/5wi4/alignment_5wi4
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: canonical
+# 2: pro_5wi4
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 194
+# Identity:     189/194 (97.4%)
+# Similarity:   189/194 (97.4%)
+# Gaps:           5/194 ( 2.6%)
+# Score: 976.5
+# 
+#
+#=======================================
+
+canonical          1 EVSSIVKEAIESAIGGNAYQHSKVNQWTTNVLEQTLSQLTKLGRPFKYIV     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+pro_5wi4           1 EVSSIVKEAIESAIGGNAYQHSKVNQWTTNVLEQTLSQLTKLGRPFKYIV     50
+
+canonical         51 TCVIMQKNGAGLHSASSCFWDSSTDGSCTVRWENKTMYCIVSTFGLSEVS    100
+                     ||||||||  ||||||||||||||||||||||||||||||||||||||||
+pro_5wi4          51 TCVIMQKN--GLHSASSCFWDSSTDGSCTVRWENKTMYCIVSTFGLSEVS     98
+
+canonical        101 SIVKEAIESAIGGNAYQHSKVNQWTTNVLEQTLSQLTKLGRPFKYIVTCV    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+pro_5wi4          99 SIVKEAIESAIGGNAYQHSKVNQWTTNVLEQTLSQLTKLGRPFKYIVTCV    148
+
+canonical        151 IMQKNGAGLHSASSCFWDSSTDGSCTVRWENKTMYCIVSTFGLS    194
+                     ||||   |||||||||||||||||||||||||||||||||||||
+pro_5wi4         149 IMQK---GLHSASSCFWDSSTDGSCTVRWENKTMYCIVSTFGLS    189
+
+
+#---------------------------------------
+#---------------------------------------
