@@ -79,8 +79,8 @@ a los índices de los átomos, q van a quedar mal numerados
 ----
     fetch 1ygt, type = pdb1, multiplex 1 // en el pymol
     corto las cadenas en *a_1ygt.pdb* y *b_1ygt.pdb*    
-    convpdb.pl -addres -13 a_5vky.pdb > a.pdb
-    convpdb.pl -addres -13 b_5vky.pdb > b.pdb
+    convpdb.pl -addres -13 a_1ygt.pdb > a.pdb
+    convpdb.pl -addres 84 b_1ygt.pdb > b.pdb
     cat a.pdb b.pdb > nrot_1ygt.pdb // Le borro el *END* en el medio y no le doy bola
 a los índices de los átomos, q van a quedar mal numerados. También le cambio
 el chain ID a la 2da cadena a *B*
