@@ -1,0 +1,77 @@
+HBPLUS Hydrogen Bond Calculator v 3.2            May 03 13:14:09 CEST 2019
+(c) I McDonald, D Naylor, D Jones and J Thornton 1993 All Rights Reserved.
+
+Configured for 100000 atoms and 24000 residues.
+
+Criteria
+
+Minimum Angles; DHA 90.00, HAAA 90.00, DAAA 90.00
+Maximum Distances; D-A 3.9, H-A 2.5, S-S 3.0
+Maximum angles at aromatic acceptors DAAX 20.00, HAAAX 20.00
+Minimum covalent separation 3 Covalent bonds
+
+
+Processing file "3fm7.pdb" . . .
+Opening "3fm7.pdb" for protein co-ordinates. . .
+
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Residue HSD is not recognized by HBPLUS 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  OT1 from residue VAL 
+WARNING: Unrecognized atom name  OT2 from residue VAL 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  OT1 from residue VAL 
+WARNING: Unrecognized atom name  OT2 from residue VAL 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  OT1 from residue GLY 
+WARNING: Unrecognized atom name  OT2 from residue GLY 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  CD  from residue ILE 
+WARNING: Unrecognized atom name  OT1 from residue GLY 
+WARNING: Unrecognized atom name  OT2 from residue GLY 
+3436 atoms selected from 431 residues.
+
+Found 1 elements of secondary structure and 6 chains.
+0 CONRECS used.
+Checking for disulphide bridges . . . 
+0 disulphide bonds found.
+
+
+Adding Polar Hydrogens.
+WARNING: Cannot locate both donor antecedents of backbone /A0027hASP N  .
+WARNING: Cannot locate both donor antecedents of backbone /A0069hTHR N  .
+WARNING: Cannot locate both donor antecedents of backbone /B0131hASP N  .
+WARNING: Cannot locate both donor antecedents of backbone /B0173hTHR N  .
+WARNING: Cannot locate both donor antecedents of backbone /E0313hCYS N  .
+WARNING: Cannot locate both donor antecedents of backbone /E0326hGLU N  .
+WARNING: Cannot locate both donor antecedents of backbone /E0330hPHE N  .
+WARNING: Cannot locate both donor antecedents of backbone /F0398hCYS N  .
+WARNING: Cannot locate both donor antecedents of backbone /F0411hGLU N  .
+WARNING: Cannot locate both donor antecedents of backbone /F0415hPHE N  .
+Opened output file "3fm7.hb2".
+Checking for hydrogen bonds . . . 
+376 hydrogen bonds found.
