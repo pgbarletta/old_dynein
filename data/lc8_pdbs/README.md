@@ -30,5 +30,30 @@
 
 2XQQ
 ----
-    
+    cp 2XQQ.pdb ?_2xqq.pdb // separo las 4 cadenas y corto los sobrantes 
+(5-89)
+    conservo los residuos A y descarto los B
+    Renombro las cadenas p/ respetar el formato de 3FM7.
+    corro su renum.sh
+    borro los END
+
+3GLW
+----
+    Separo nrot_3glb.pdb y nrot_3glf.pdb
+
+3ZKE
+----
+    cp 3ZKE.pdb tmp.pdb
+    corto residuos extra de la IC
+    Renombro las cadenas p/ respetar el formato de 3FM7.
+    corro su renum.sh
+    borro los END
+   
+4qh7: le falta 1 residuo al ppio y al final (6-98)
+----
+    cp 3ZKE.pdb tmp.pdb
+    Renombro las cadenas p/ respetar el formato de 3FM7.
+    corro su renum.sh
+    borro los END
+
 
