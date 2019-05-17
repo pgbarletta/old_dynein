@@ -10,7 +10,6 @@
     corto residuos extra del dominio LC8 (5-99)
     Renombro las cadenas p/ respetar el formato de 3FM7.
     corro su renum.sh
-    borro los END
 1F96
 ----
     cp 1F96.pdb tmp.pdb 
@@ -37,9 +36,18 @@
     corro su renum.sh
     borro los END
 
+3FM7
+----
+    cp 3fm7.pdb tmp.pdb
+    Descarto TcTex (chains A y B) y recorto IC.
+    corro su renum.sh
+
 3GLW
 ----
-    Separo nrot_3glb.pdb y nrot_3glf.pdb
+    cp 3glw.pdb tmp.pdb
+    Descarto una IC, corto residuo extra de otra IC y corto residuo 4 del LC8 (5-89)
+    corro su renum.sh
+    borro los END    
 
 3ZKE
 ----
