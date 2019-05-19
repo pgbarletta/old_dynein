@@ -20,8 +20,14 @@ do
     convpdb.pl -renumber 171 -chain C $proto_lb > c.pdb
     convpdb.pl -renumber 180 -chain D $proto_lb > d.pdb
     convpdb.pl -renumber 1 -chain E $proto_lb > e.pdb
-    convpdb.pl -renumber 86 -chain F $proto_lb > f.pdb
-    
+
+    if [[ $pdb == 4q ]]
+    then
+        convpdb.pl -renumber 84 -chain F $proto_lb > f.pdb
+    else
+        convpdb.pl -renumber 86 -chain F $proto_lb > f.pdb
+    fi
+
     cat e.pdb f.pdb > $pro_lf
     sed -i /END/d $pro_lf
     
