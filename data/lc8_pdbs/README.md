@@ -41,6 +41,7 @@
     cp 3fm7.pdb tmp.pdb
     Descarto TcTex (chains A y B) y recorto IC.
     corro su renum.sh
+    
 
 3GLW
 ----
@@ -63,5 +64,4 @@
     Renombro las cadenas p/ respetar el formato de 3FM7.
     corro su renum.sh
     borro los END
-
 
