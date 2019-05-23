@@ -2,14 +2,14 @@
 
 while read -r pdb
 do
-    if [[ $pdb == "15lf" ]]
+    if [[ $pdb == "template" ]]
     then
         continue
     fi
     echo $pdb
 
-    cd $pdb/cav    
-    cp ../../15lf/cav/*cfg .
+    cd $pdb/modos/
+    ./mod.sh
     cd ../../
 
 done < pdbs.list
