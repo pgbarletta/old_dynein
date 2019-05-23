@@ -60,7 +60,7 @@
    
 4qh7: le falta 1 residuo al ppio y al final (6-98)
 ----
-    cp 3ZKE.pdb tmp.pdb
+    cp 4QH7.pdb tmp.pdb
     Renombro las cadenas p/ respetar el formato de 3FM7.
     corro su renum.sh
     borro los END
