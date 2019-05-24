@@ -86,5 +86,9 @@ a los índices de los átomos, q van a quedar mal numerados
 a los índices de los átomos, q van a quedar mal numerados
     vi pro_5wi4.pdb // y hago:   %s/HSD/HIS/g
     en models.ipynb hago todo lo demas
-    escribo el mod.py lo corro y selecciono el model 7
-
+    escribo el mod.py lo corro y selecciono el model 37
+    cp model_5wi4.B99990037.pdb nrot_5wlf.pdb // le agrego los TER y las letras a las cadenas
+    cp 5WI4.pdb ic.pdb // saco las IC.
+    ./renum.sh ic.pdb 
+    cp nrot_5wlf.pdb nrot_5wlb.pdb // le agrego las IC 
+    
