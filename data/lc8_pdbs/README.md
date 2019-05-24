@@ -18,6 +18,8 @@
     Renombro las cadenas p/ respetar el formato de 3FM7.
     corro su renum.sh
     borro los END
+    tengo q pegar este CA al final de todo
+ATOM    128  CA  ASP C  2      -48.74  -87.888 -41.126  1.00  0.00           C
 
 2P2T
 ----
