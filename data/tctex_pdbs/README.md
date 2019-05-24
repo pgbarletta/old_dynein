@@ -1,14 +1,3 @@
-5JPW
-----
-    Usé normalize_pdbs.ipynb p/ determinar el frame más cercano al average.
-    cp orig_5jpw.pdb tmp.pdb // y conservo el MODEL 1
-    convpdb.pl -addres -17 -chain A tmp.pdb > a.pdb
-    convpdb.pl -renumber 98 -chain B tmp.pdb > b.pdb
-    cat a.pdb b.pdb > nrot_5jpw.pdb // Le borro el *END* en el medio y no le doy bola
-a los índices de los átomos, q van a quedar mal numerados
-    vi nrot_5jpw.pdb // :%s/HSP/HIS/g    (arreglo las cagadas de convpdb.pl)
-
-
 1XDX
 ----
     Usé normalize_pdbs.ipynb p/ determinar el frame más cercano al average.
@@ -19,17 +8,20 @@ a los índices de los átomos, q van a quedar mal numerados
 a los índices de los átomos, q van a quedar mal numerados
     vi nrot_1xdx.pdb // :%s/HSP/HIS/g    (arreglo las cagadas de convpdb.pl)
 
-
-5WI4
+1YGT:
 ----
-    cp 5WI4.pdb proto_5wi4.pdb // le borré REMARKS y corté el dominio TcTex.
-    convpdb.pl -addres -15 -chain A proto_5wi4.pdb > a.pdb // sólo cadena A.
-    convpdb.pl -addres -15 -chain b proto_5wi4.pdb > b.pdb // sólo cadena B.
-    cat a.pdb b.pdb > pro_5wi4.pdb // Le borro el *END* en el medio y no le doy bola
-a los índices de los átomos, q van a quedar mal numerados
-    vi pro_5wi4.pdb // y hago:   %s/HSD/HIS/g
-    en models.ipynb hago todo lo demas
-    escribo el mod.py lo corro y selecciono el model 7
+    fetch 1ygt, type = pdb1, multiplex 1 // en el pymol
+    corto las cadenas en *a_1ygt.pdb* y *b_1ygt.pdb*    
+    convpdb.pl -addres -13 a_1ygt.pdb > a.pdb
+    convpdb.pl -addres 84 b_1ygt.pdb > b.pdb
+    cat a.pdb b.pdb > nrot_1ygt.pdb // Le borro el *END* en el medio y no le doy bola
+a los índices de los átomos, q van a quedar mal numerados. También le cambio
+el chain ID a la 2da cadena a *B*
+
+2PG1:
+----
+    cp original(no se de donde) tmp.pdb
+    run renum.sh  // le saco los END
 
 5HXL: da feo pq hay missing re falopa
 ----
@@ -75,13 +67,24 @@ a los índices de los átomos, q van a quedar mal numerados
     genero *canonical* bajando el fasta del PDB
     escribo el mod.py lo corro y selecciono el model 36
 
-1YGT:
+5JPW
 ----
-    fetch 1ygt, type = pdb1, multiplex 1 // en el pymol
-    corto las cadenas en *a_1ygt.pdb* y *b_1ygt.pdb*    
-    convpdb.pl -addres -13 a_1ygt.pdb > a.pdb
-    convpdb.pl -addres 84 b_1ygt.pdb > b.pdb
-    cat a.pdb b.pdb > nrot_1ygt.pdb // Le borro el *END* en el medio y no le doy bola
-a los índices de los átomos, q van a quedar mal numerados. También le cambio
-el chain ID a la 2da cadena a *B*
+    Usé normalize_pdbs.ipynb p/ determinar el frame más cercano al average.
+    cp orig_5jpw.pdb tmp.pdb // y conservo el MODEL 1
+    convpdb.pl -addres -17 -chain A tmp.pdb > a.pdb
+    convpdb.pl -renumber 98 -chain B tmp.pdb > b.pdb
+    cat a.pdb b.pdb > nrot_5jpw.pdb // Le borro el *END* en el medio y no le doy bola
+a los índices de los átomos, q van a quedar mal numerados
+    vi nrot_5jpw.pdb // :%s/HSP/HIS/g    (arreglo las cagadas de convpdb.pl)
+
+5WI4
+----
+    cp 5WI4.pdb proto_5wi4.pdb // le borré REMARKS y corté el dominio TcTex.
+    convpdb.pl -addres -15 -chain A proto_5wi4.pdb > a.pdb // sólo cadena A.
+    convpdb.pl -addres -15 -chain b proto_5wi4.pdb > b.pdb // sólo cadena B.
+    cat a.pdb b.pdb > pro_5wi4.pdb // Le borro el *END* en el medio y no le doy bola
+a los índices de los átomos, q van a quedar mal numerados
+    vi pro_5wi4.pdb // y hago:   %s/HSD/HIS/g
+    en models.ipynb hago todo lo demas
+    escribo el mod.py lo corro y selecciono el model 7
 
