@@ -12,4 +12,4 @@ do
     ./mod.sh
     cd ../../
 
-done < pdbs.list
+done < as.list

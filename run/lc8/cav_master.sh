@@ -16,4 +16,4 @@ do
     ~/labo/ANA/build/ANA2 ../modos/$pdb.pdb -c edf.cfg -o vol_edf -f cav_${pdb}_edf -w wall_${pdb}_edf
     cd ../../
 
-done < pdbs.list
+done < as.list

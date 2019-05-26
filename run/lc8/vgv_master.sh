@@ -28,7 +28,4 @@ do
     echo ------${pdb}------ >> volumenes
     cat $pdb/ndd/out >> volumenes
     echo >> volumenes
-done < pdbs.list
-
-
-
+done < as.list
