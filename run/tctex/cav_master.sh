@@ -16,4 +16,4 @@ do
     ~/labo/ANA/build/ANA2 ../modos/$pdb.pdb -c adb.cfg -o vol_adb -f cav_${pdb}_adb -w wall_${pdb}_adb
     cd ../../
 
-done < pdbs.list
+done < as.list

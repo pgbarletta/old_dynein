@@ -13,9 +13,12 @@ do
     sed 's/#NDD_/NDD_/g' ../cav/acb.cfg > acb.cfg
     sed 's/#NDD_/NDD_/g' ../cav/adb.cfg > adb.cfg
 
-    #tail -n+8 ../modos/$pdb.freq > frq_$pdb
-    #var=`wc -l < frq_$pdb`
-    #tail -n $var ../../scl > scl
+    sed -i /list_wall/d acb.cfg
+    sed -i /list_wall/d adb.cfg
+
+    tail -n+8 ../modos/$pdb.freq > frq_$pdb
+    var=`wc -l < frq_$pdb`
+    tail -n $var ../../scl > scl
 
     echo acb > out
     ~/labo/ANA/build/ANA2 ../modos/$pdb.pdb -c acb.cfg -M ../modos/$pdb.mods -S scl -F frq_$pdb -Z 5 >> out
@@ -27,5 +30,5 @@ do
     echo ------${pdb}------ >> volumenes
     cat $pdb/ndd/out >> volumenes
     echo >> volumenes
-done < pdbs.list
+done < as.list
 
