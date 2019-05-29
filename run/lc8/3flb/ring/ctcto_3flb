@@ -7,7 +7,7 @@ Please see LICENSE file for details (http://protein.bio.unipd.it/LICENSE).
 Contact silvio.tosatto@unipd.it for commercial licensing details.
 
 
-# Licence will expire on 2020-12-31 (remaining days: 583).
+# Licence will expire on 2020-12-31 (remaining days: 582).
 ******************************************************************************************************
 NodeId1	Interaction	NodeId2	Distance	Angle	Energy	Atom1	Atom2	Donor	Positive	Cation	Orientation
 C:171:_:VAL	VDW:SC_SC	E:63:_:THR	4.024	-999.9	6.000	CB	CG2				
